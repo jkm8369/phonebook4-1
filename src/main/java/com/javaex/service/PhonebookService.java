@@ -57,5 +57,14 @@ public class PhonebookService {
 		return count;
 	}
 	
+	public int exeModify(PersonVO personVO) {
+		System.out.println("PhonebookService.exeModify()");
+		
+		//phonebookDAO.personUpdate();
+		
+		
+		return 0;
+	}
+	
 	
 }

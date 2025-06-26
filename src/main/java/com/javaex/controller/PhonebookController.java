@@ -37,7 +37,7 @@ public class PhonebookController {
 		return "list";
 	}
 	
-	//--수정폼
+	//--수정폼 한명 데이터 가져오기
 	@RequestMapping(value="/mform", method = {RequestMethod.GET, RequestMethod.POST})
 	public String modifyform(@RequestParam(value= "no")int personId, Model model) {
 		System.out.println("PhonebookController.modifyForm()");
@@ -62,10 +62,15 @@ public class PhonebookController {
 	}
 	
 	//--수정하기
-	public String modify() {
+	@RequestMapping(value="/modify", method= {RequestMethod.GET, RequestMethod.POST})
+	public String modify(@ModelAttribute PersonVO personVO) {
+		System.out.println("PhonebookController.modify()");
+		
 		
 		return "";
 	}
+	
+	
 	
 	
 	
