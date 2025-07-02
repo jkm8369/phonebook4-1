@@ -18,19 +18,19 @@
 	
 		<form action="${pageContext.request.contextPath}/modify"  method="get">
 			<label>이름(name)</label>
-			<input type="text" name="name" value="${personVO.name}">
+			<input type="text" name="name" value="${map.name}">
 			<br>
 		
 			<label>핸드폰(hp)</label>
-			<input type="text" name="hp" value="${personVO.hp}">
+			<input type="text" name="hp" value="${map.hp}">
 			<br>
 	
 			<label>회사(company)</label>
-			<input type="text" name="company" value="${personVO.company}">
+			<input type="text" name="company" value="${map.company}">
 			<br>
 			
 			<label></label>
-			<input type="text" name="personId" value="${personVO.personId}">
+			<input type="text" name="personId" value="${map.personId}">
 			<br>
 			
 			<button type="submit">수정</button>
