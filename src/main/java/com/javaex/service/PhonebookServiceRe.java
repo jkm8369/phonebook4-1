@@ -28,9 +28,9 @@ public class PhonebookServiceRe {
 	public Map<String, Object> exeModifyForm(int personId) {
 		System.out.println("PhonebookServiceRe.exeModifyForm()");
 		
-		Map<String, Object> map = phonebookRepository.personSelectOne(personId);
+		Map<String, Object> pMap = phonebookRepository.personSelectOne(personId);
 		
-		return map;
+		return pMap;
 	}
 	
 	

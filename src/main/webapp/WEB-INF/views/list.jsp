@@ -19,30 +19,30 @@
 		
 			
 		
-		<c:forEach items="${requestScope.map.personList}" var ="map">
+		<c:forEach items="${requestScope.personList}" var ="pList">
 			<table border="1">
 				<tbody>
 					<tr>
 						<td>이름(name)</td>
-						<td>${map.name}</td>
+						<td>${pList.name}</td>
 					<tr>
 					<tr>
 						<td>핸드폰(hp)</td>
-						<td>${map.hp}</td>
+						<td>${pList.hp}</td>
 					<tr>
 					<tr>
 						<td>회사(company)</td>
-						<td>${map.company}</td>
+						<td>${pList.company}</td>
 					<tr>	
 					<tr>
 						<td>
-							<a href="${pageContext.request.contextPath}/mform?no=${map.personId}">
+							<a href="${pageContext.request.contextPath}/mform?no=${pList.personId}">
 								[수정폼으로 이동]
 							</a>		
 						</td>
 						<td>
-							<a href="${pageContext.request.contextPath}/delete?no=${map.personId}">
-								[삭제] ${map.personId}
+							<a href="${pageContext.request.contextPath}/delete?no=${pList.personId}">
+								[삭제] ${pList.personId}
 							</a>
 						</td>   <!-- 원래 버튼으로 해야된다 js필요 안배워서 a 태그로 구현 -->
 					<tr>	

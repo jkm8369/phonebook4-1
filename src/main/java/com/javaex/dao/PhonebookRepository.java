@@ -31,9 +31,9 @@ public class PhonebookRepository {
 		
 		//PersonVO PersonVO = sqlSession.selectOne("phonebook.selectOne", personId);
 		
-		Map<String, Object> map = sqlSession.selectOne("phonebook.selectOne2", personId);
+		Map<String, Object> pMap = sqlSession.selectOne("phonebook.selectOne2", personId);
 		
-		return map;
+		return pMap;
 	}
 
 	//--등록

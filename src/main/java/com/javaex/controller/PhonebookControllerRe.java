@@ -33,13 +33,13 @@ public class PhonebookControllerRe {
 	
 	
 	//--수정폼 한명 데이터 가져오기
-	@RequestMapping(value= "modifyformRe", method = {RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value= "mformRe", method = {RequestMethod.GET, RequestMethod.POST})
 	public String modifyForm(@RequestParam(value="no")int personId, Model model) {
 		System.out.println("PhonebookControllerRe.modifyForm()");
 		
-		Map<String, Object> map = phonebookServiceRe.exeModifyForm(personId);
+		Map<String, Object> pMap = phonebookServiceRe.exeModifyForm(personId);
 		
-		model.addAttribute(map);
+		model.addAttribute("pMap", pMap);
 		
 		return "modifyForm";
 	}
