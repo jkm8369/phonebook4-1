@@ -57,6 +57,7 @@ public class PhonebookService {
 		return count;
 	}
 	
+	//--수정하기
 	public int exeModify(PersonVO personVO) {
 		System.out.println("PhonebookService.exeModify()");
 		

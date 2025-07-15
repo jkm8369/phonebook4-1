@@ -33,6 +33,8 @@ public class PhonebookRepository {
 		
 		Map<String, Object> pMap = sqlSession.selectOne("phonebook.selectOne2", personId);
 		
+		System.out.println(pMap);
+		
 		return pMap;
 	}
 

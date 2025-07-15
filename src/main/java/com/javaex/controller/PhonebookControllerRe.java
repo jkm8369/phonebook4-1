@@ -20,7 +20,7 @@ public class PhonebookControllerRe {
 	private PhonebookServiceRe phonebookServiceRe;
 	
 	//--전체 리스트
-	@RequestMapping(value= "listRe", method = {RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value= "/listRe", method = {RequestMethod.GET, RequestMethod.POST})
 	public String list(Model model) {
 		System.out.println("PhonebookControllerRe.list()");
 		
@@ -33,7 +33,7 @@ public class PhonebookControllerRe {
 	
 	
 	//--수정폼 한명 데이터 가져오기
-	@RequestMapping(value= "mformRe", method = {RequestMethod.GET, RequestMethod.POST})
+	@RequestMapping(value= "/mformRe", method = {RequestMethod.GET, RequestMethod.POST})
 	public String modifyForm(@RequestParam(value="no")int personId, Model model) {
 		System.out.println("PhonebookControllerRe.modifyForm()");
 		
@@ -46,7 +46,12 @@ public class PhonebookControllerRe {
 	
 	
 	//--등록
-	
+	@RequestMapping(value="/addRe", method= {RequestMethod.GET, RequestMethod.POST})
+	public String add() {
+		System.out.println("PhonebookControllerRe.add()");
+		
+		return "";
+	}
 	
 	
 	//--수정하기
